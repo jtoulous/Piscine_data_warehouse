@@ -14,7 +14,7 @@ FROM
 LEFT JOIN
     customers c
 ON
-    i.product_id = d.product_id;
+    i.product_id = c.product_id;
 
 DROP TABLE customers;
-ALTER TABLE tmp_table RENAME AS customers;
+ALTER TABLE tmp_table RENAME TO customers;
